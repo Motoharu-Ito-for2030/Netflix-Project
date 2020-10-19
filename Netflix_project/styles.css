@@ -1,0 +1,209 @@
+/* HOME */
+body {
+	font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+  margin: 0;
+  padding: 0;
+  word-break: normal;
+  background: black;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+.content {
+  max-width: 750px;
+  height: 750px;
+  margin: 0 auto;
+}
+
+input[type="text"]{
+  width: 75%;
+  height: 30px;
+  margin-bottom: 20px;
+}
+header {
+  margin: 30px 0;
+}
+.logo {
+  width: 100px;
+}
+
+.home.content {
+  background-image: url("images/netflix-background.jpg");
+  margin: 0 auto;
+}
+.home button {
+  float: right;
+  margin-right: 30px;
+  color: white;
+  background-color: red;
+  border-radius: 2px;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+.home main {
+  color: white;
+  text-align: center;
+}
+
+
+/* LOGIN */
+.login main {
+  padding: 0 20px;
+}
+.login > main > form > input {
+  background-color: #333;
+  border-radius: 2px;
+  border: none;
+  margin: 20px auto;
+  width: 75%;
+  color: white;
+}
+.login > main > form > button {
+  color: white;
+  background-color: red;
+  border-radius: 2px;
+  border: none;
+  padding: 20px;
+  display: block;
+  width: 75%;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* SIGNUP */
+/* SIGNOUT */
+
+#humberger {
+  position: relative;
+  height: 24px;
+  width: 24px;
+  display: inline-block;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+#humberger div {
+  position: absolute;
+  left: 0;
+  height: 4px;
+  width: 24px;
+  background-color: #444;
+  border-radius: 2px;
+  display: inline-block;
+  box-sizing: border-box;
+}
+#humberger div:nth-of-type(1) {
+  top: 0;
+}
+#humberger div:nth-of-type(2) {
+  top: 10px;
+}
+#humberger div:nth-of-type(3) {
+  bottom: 0;
+}
+
+
+/* MOVIELIST */
+.list main h1{
+  color: rgb(92, 92, 92);
+}
+
+.genre {
+  display: flex;
+  width: 100%;
+  overflow:hidden;
+  overflow-x:scroll;
+  background-color: white; 
+}
+.genre img {
+  width: 300px;
+  height: 150px;
+  margin-right: 2px;
+}
+::-webkit-scrollbar{
+ width: 10px;
+}
+::-webkit-scrollbar-track{
+  background: #fff;
+  border-left: solid 1px #ececec;
+}
+::-webkit-scrollbar-thumb{
+  background: #ccc;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 2px #fff;
+}
+.balloon {
+  visibility: visible;
+  font-size: 64px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* MOVIEDETAIL */
+.detail main img {
+  width: 100%;
+}
+.detail main button {
+  color: white;
+  background-color: red;
+  border-radius: 2px;
+  border: none;
+  padding: 20px;
+  display: block;
+  width: 75%;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 0 auto;
+}
+.detail main h1 {
+  font-weight: normal;
+}
+.detail main p {
+  color: rgb(100, 99, 99);
+}
+
+/* LOGOUT */
+#user {
+  width: 750px;
+  max-width: 750px;
+  height: 100%;
+  background-color: rgba(000, 0, 00, 0.8);
+  color: #333;
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  grid-template-rows: 100px 1fr;
+  position: absolute;
+  top: 100px;
+  grid-row-gap: 100px;
+}
+#user img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+#user h1 {
+  border-top: 1px white solid;
+  border-bottom: 1px white solid;
+  margin: 0;
+  padding: 0;
+  color: white;
+  text-align: center;
+  height: 100px;
+  line-height: 100px;
+}
+#user button {
+  color: white;
+  background-color: red;
+  border-radius: 2px;
+  border: none;
+  padding: 20px;
+  display: block;
+  width: 100%;
+  font-size: 20px;
+  cursor: pointer;
+}
+#user a {
+  text-decoration: none;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
